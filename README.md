@@ -7,7 +7,7 @@ WebGIS平台可以将复杂数字信息转化为直观的可视化地图，帮�
 ![Alt text](image-2.png)
 ![Alt text](image-3.png)
 ![Alt text](image-4.png)
-![Alt text](2023-06-10-10-20-18.gif)
+![Alt text](<2023-06-10 10-20-18.gif>)
 ## Project setup
 ```
 npm install
