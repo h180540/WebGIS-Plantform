@@ -63,7 +63,7 @@ export default {
 
     onMounted(() => {
       AMapLoader.load({
-        key: '2d7b2f503288a4b63fed728b5e8a3123',
+        key: '',
         version: '2.0',
         plugins: ['AMap.ToolBar', 'AMap.Scale', 'AMap.HawkEye', 'AMap.MapType', 'AMap.DragRoute'],
       }).then((AMap) => {
@@ -194,7 +194,7 @@ export default {
 
         const radius = Math.sqrt(Math.pow(northeast.lng - centerLng, 2) + Math.pow(northeast.lat - centerLat, 2));
 
-        const url = `https://restapi.amap.com/v3/place/around?key=e6fdbb84116fee97e090eebd95d8c0ee&location=${centerLng},${centerLat}&radius=${radius}&types=${type}&offset=20`;
+        const url = `https://restapi.amap.com/v3/place/around?key=&location=${centerLng},${centerLat}&radius=${radius}&types=${type}&offset=20`;
 
         axios.get(url)
           .then((response) => {
@@ -383,10 +383,9 @@ export default {
   position: fixed;
   top: 40px;
   left: 450px;
-  /* Update this based on your layout */
   z-index: 998;
   background-color: #FF4949;
-  /* Update the color based on your design */
+
   color: white;
   border: none;
   border-radius: 4px;
@@ -397,11 +396,11 @@ export default {
 
 .clear-navigation-button:hover {
   background-color: #C0392B;
-  /* Update the color based on your design */
+
 }
 
 .clear-navigation-button:active {
   background-color: #E74C3C;
-  /* Update the color based on your design */
+
 }
 </style>

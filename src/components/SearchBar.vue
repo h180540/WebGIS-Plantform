@@ -29,7 +29,7 @@ export default {
     performSearch() {
       const encodedKeyword = encodeURIComponent(this.searchKeyword);
 
-      const url = `https://restapi.amap.com/v3/place/text?key=e6fdbb84116fee97e090eebd95d8c0ee&keywords=${encodedKeyword}&city=370&types=110000|050000|100000|150000|190000`;
+      const url = `https://restapi.amap.com/v3/place/text?key=&keywords=${encodedKeyword}&city=370&types=110000|050000|100000|150000|190000`;
 
       axios
         .get(url)

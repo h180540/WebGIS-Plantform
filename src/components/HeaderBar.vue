@@ -38,7 +38,7 @@ export default {
   position: fixed;
   top: 30px;
   right: 50px;
-  z-index: 1;
+  z-index: 999;
 }
 
 .header-buttons {
